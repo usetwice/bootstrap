@@ -1,3 +1,6 @@
+body {
+	padding-top: @navbarHeight + 20px; /* 70px to make the container go all the way to the bottom of the topbar */
+}
 .form-homepage-container {
 	background-color: #000000;
 	margin-left: 0px;
@@ -8,3 +11,99 @@
 .row-bg {
 	background-color: @textColor;
 }
+
+.center.navbar .nav,
+.center.navbar .nav > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    *zoom:1; /* hasLayout ie7 trigger */
+    vertical-align: top;
+}
+
+.center .navbar-inner {
+    text-align:center;
+}
+
+.row-with-bg {
+	background-color: gray;
+}
+
+// Dividers in navbar
+// -------------------------
+.navbar .divider-vertical {
+  height: @navbarHeight;
+  margin: 0 0 0 1px;
+  border-left: 1px solid @white;
+  border-right: 0px solid @white;
+}
+// Dividers in navbar
+.divider-vertical {
+	border-left-color: @white;
+	border-right-color: @white;
+}
+
+.navbar .nav > li > a.ut-navbar-icon {
+  .ie7-restore-right-whitespace();
+  vertical-align: text-top;
+  background-image: url("@{utIconSpritePath}");
+  background-repeat: no-repeat;
+  padding: 0;
+  float: none;
+}
+
+.ut-navbar-icon-homepage {
+	@homepageIconWidth: 22px;
+	@homepageIconHeight: 24px;
+  margin: ((@navbarHeight - @homepageIconHeight) / 2) 10px ((@navbarHeight - @homepageIconHeight) / 2) 0;
+  width: @homepageIconWidth;
+	height: @homepageIconHeight;
+  background-position: 0px -50px;
+  &:hover {
+  	background-position: -26px -50px;
+  }
+}
+
+.ut-navbar-icon-facebook {
+	@homepageIconWidth: 12px;
+	@homepageIconHeight: 18px;
+  margin: ((@navbarHeight - @homepageIconHeight) / 2) 10px ((@navbarHeight - @homepageIconHeight) / 2);
+  width: @homepageIconWidth;
+	height: @homepageIconHeight;
+  background-position: -5px -77px;
+  &:hover {
+  	background-position: -31px -77px;
+  }
+}
+
+.ut-navbar-icon-twitter {
+	@homepageIconWidth: 18px;
+	@homepageIconHeight: 13px;
+  margin: ((@navbarHeight - @homepageIconHeight) / 2) 10px ((@navbarHeight - @homepageIconHeight) / 2);
+  width: @homepageIconWidth;
+	height: @homepageIconHeight;
+  background-position: -1px -100px;
+  &:hover {
+  	background-position: -27px -100px;
+  }
+}
+
+.available-languages .flag { margin-right: 10px;}
+.available-languages a { display: block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
