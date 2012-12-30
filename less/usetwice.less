@@ -43,6 +43,7 @@ body {
 	border-right-color: @white;
 }
 
+@utIconSpritePath:        "/bundles/utmain/bootstrap/img/ut-sprites.png";
 .navbar .nav > li > a.ut-navbar-icon {
   .ie7-restore-right-whitespace();
   vertical-align: text-top;
@@ -88,16 +89,12 @@ body {
   }
 }
 
-.available-languages .flag { margin-right: 10px;}
-.available-languages a { display: block;}
-
-
-
-
-
-
-
-
+@media (max-width: @navbarCollapseWidth) {
+  .navbar-fixed-top .navbar-inner,
+  .navbar-fixed-bottom .navbar-inner {
+    padding: 0 5px;
+  }
+}
 
 
 
